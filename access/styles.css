@@ -1,0 +1,139 @@
+/* Reset default margins, paddings, and set box-sizing to border-box for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body{
+    /* Hide overflow on the body to prevent scrolling */
+    overflow: hidden;
+}
+/* header */
+header nav{
+    width: 100%;
+    padding: 22px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #241919;
+    z-index: 999;
+}
+header nav ul,.media{
+    display: flex;
+    list-style: none;
+}
+header nav ul li a,.media li a{
+    margin: 0 20px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all ease-in-out 0.55s;
+}
+header nav ul li a.active,header nav ul li a:hover{
+    font-weight: 800;
+}
+/* icons */
+.media li a{
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0 4px;
+    padding: 4px 8px 8px;
+    border-radius: 20px;
+}
+.media li a:hover,.media li a.active{
+    background: red;
+}
+/* logo */
+header .logo a{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .logo span{
+    color: red;
+}
+/* Styling for the home section background */
+.home{
+    background: url("./home.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+/* Flexbox for aligning and centering content in the home section */ 
+.home .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+    text-align: center;
+}
+.home .content h1{
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: 800;
+    margin:0 0 35px;
+    letter-spacing: 4px;
+}
+.home .content h1 span{
+    color: red;
+}
+.home .content p{
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 20px 60px;
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 0 0 15px;
+}
+/* Styling for call-to-action buttons */
+.cta-button{
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 700;
+    background: red;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px;
+    width: 250px;
+    transition: all ease-in-out 0.55s;
+}
+.cta-button.help,.cta-button.browse:hover{
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.cta-button.help:hover{
+    background: red;
+    color: #ffffff;
+}
+.cta-button:hover{
+    transform: scale(1.1);
+}
+/* Positioning for the downward arrow icon */
+.arrow{
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+}
+.arrow a{
+    padding: 4px 8px;
+    color: #ffffff;
+    background: red;
+    font-size: 35px;
+    text-decoration: none;
+    border-radius: 50%;
+}
